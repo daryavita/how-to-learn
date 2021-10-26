@@ -19,6 +19,11 @@ h1, h2, h3,p, a, ul,li{
   height: 32px;
 }
 
+.link{
+  color: #2f80ed;
+  text-decoration: none;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -51,10 +56,10 @@ h1, h2, h3,p, a, ul,li{
   font-size: 18px;
 }
 
-.header__link{
+/* .header__link{
   color: #2f80ed;
   text-decoration: none;
-}
+} */
 
 .header__main-illustration{
   width: 765px;
@@ -146,13 +151,14 @@ h1, h2, h3,p, a, ul,li{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.table_digits{
+/* .table_type_digits{
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
-}
+} */
 
 .table__cell{
   width: 250px;
@@ -172,15 +178,158 @@ h1, h2, h3,p, a, ul,li{
   font-weight: normal;
 }
 
-.table__text_source{
+.table__text_type_source{
   margin-top: 20px;
 }
 
+.feynman{
+  height: 890px;
+  background-image: url('../images/feynman.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
+.feynman__title{
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle{
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.kaufman{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.table_theme_dark{
+  z-index: 1;
+  margin-bottom: 90px;
+}
+
+.section-title_theme_dark{
+  width: 60%;
+  text-align: center;
+  margin-top: 90px;
+  color: white;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark{
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-} */
+}
+
+.kaufman__triangle{
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+}
+
+.footer{
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.footer__columns{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.footer__column_content_copyright{
+display: flex;
+flex-basis: 711px;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.logo_place_footer{
+
+}
+
+.footer__author{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  padding: 18px 0;
+   /* пунктир в макете - это жа падинг? */
+}
+
+.footer__column-heading{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer__column-links{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.footer__column-link{
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon{
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
